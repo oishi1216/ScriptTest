@@ -52,15 +52,18 @@ public class Test : MonoBehaviour
         //魔法攻撃用の関数
         public void Magic()
         {
-            // 残りmpを減らす
-            this.mp -= 5;
 
-            if(mp >= 0){
-                //MPが0以上の場合
+            if(mp >= 5){
+
+                // 残りmpを減らす
+                this.mp -= 5;
+
+                //MPが5以上の場合
                 string a = "魔法攻撃をした。残りMPは";
                 string b = "。";
 
                 Debug.Log(a + mp + b);
+
             } else{
                 //MPがなくなった場合
                 Debug.Log("MPが足りないため魔法が使えない。");
